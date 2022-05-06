@@ -64,5 +64,5 @@ static void __exit aufs_exit(void)
 module_init(aufs_init);
 module_exit(aufs_exit);
 MODULE_LICENSE("GPL");
-MODULE_DESCRIPTION("This is a simple module");
+MODULE_DESCRIPTION("This is a simple aufs fs module");
 MODULE_VERSION("Ver 0.1");
