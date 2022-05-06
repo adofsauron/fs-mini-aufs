@@ -13,7 +13,7 @@ struct dentry *aufs_create_file(const char *name, mode_t mode,
             struct file_operations *fops)
 {
     struct dentry *dentry = NULL;
-    int error;
+    int error = 0;
  
     printk("aufs: creating file \'%s\'", name);
      
@@ -29,7 +29,7 @@ struct dentry *aufs_create_file(const char *name, mode_t mode,
         if (fops)
             dentry->d_inode->i_fop = fops;
     }
-    
+
 exit:
     return dentry;
 }

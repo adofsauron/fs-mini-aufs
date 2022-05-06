@@ -4,7 +4,7 @@
 #include "header.h"
 
 // 每个文件系统需要一个MAGIC number
-#define AUFS_MAGIC  0x64668735
+#define AUFS_MAGIC 0x64668735
 
 // 用于填充aufs的super_block
 int aufs_fill_super(struct super_block *sb, void *data, int silent)

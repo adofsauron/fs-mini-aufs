@@ -14,7 +14,7 @@ static struct file_operations aufs_file_operations = {
     .write = aufs_file_write,
 };
 
-// 初始化aufs文件系统的 file_system_type结构，每个文件系统对应一个这样的结构体，主要用于提供具体文件系统的// 的信息，以及操作的方法
+// 初始化aufs文件系统的 file_system_type结构，每个文件系统对应一个这样的结构体，主要用于提供具体文件系统的的信息，以及操作的方法
 static struct file_system_type aufs_type = {
     .name = "aufs",
     .mount = aufs_get_sb,
