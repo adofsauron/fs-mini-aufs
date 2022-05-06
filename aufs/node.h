@@ -1,13 +1,7 @@
 #ifndef __NODE_H__
 #define __NODE_H__
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/cred.h>
-#include <linux/mount.h>
+#include "header.h"
 
 // 根据创建的aufs文件系统的 super_block创建具体的inode结构体
 struct inode *aufs_get_inode(struct super_block *sb, int mode, dev_t dev)

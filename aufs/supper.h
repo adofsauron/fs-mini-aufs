@@ -1,13 +1,7 @@
 #ifndef __SUPPER_H__
 #define __SUPPER_H__
 
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/cred.h>
-#include <linux/mount.h>
+#include "header.h"
 
 // 每个文件系统需要一个MAGIC number
 #define AUFS_MAGIC  0x64668735

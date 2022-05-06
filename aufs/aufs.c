@@ -1,11 +1,5 @@
-#include <linux/module.h>
-#include <linux/fs.h>
-#include <linux/pagemap.h>
-#include <linux/init.h>
-#include <linux/namei.h>
-#include <linux/cred.h>
-#include <linux/mount.h>
 
+#include "header.h"
 #include "node.h"
 #include "dentry.h"
 #include "supper.h"
