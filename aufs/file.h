@@ -29,6 +29,7 @@ struct dentry *aufs_create_file(const char *name, mode_t mode,
         if (fops)
             dentry->d_inode->i_fop = fops;
     }
+    
 exit:
     return dentry;
 }
