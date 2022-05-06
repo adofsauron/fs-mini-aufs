@@ -5,7 +5,6 @@
 #include "supper.h"
 #include "file.h"
 
-
 // aufs文件系统的挂载点
 struct vfsmount *aufs_mount;
 
@@ -25,9 +24,8 @@ static struct file_system_type aufs_type = {
 // 创建aufs文件系统，同时创建对应的文件夹和文件
 static int __init aufs_init(void)
 {
-    int ret;
- 
-    struct dentry *pslot;
+    int ret = 0;
+    struct dentry *pslot = NULL;
      
     ret = register_filesystem(&aufs_type);
     if (ret) {
@@ -52,7 +50,7 @@ static int __init aufs_init(void)
     aufs_create_file("lcw", S_IFREG | S_IRUGO, pslot, NULL, &aufs_file_operations);
     aufs_create_file("jw",  S_IFREG | S_IRUGO, pslot, NULL, &aufs_file_operations);
  
-    return 0;
+    return ret;
 }
 
 // 卸载aufs文件系统
