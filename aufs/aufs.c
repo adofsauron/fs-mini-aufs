@@ -141,6 +141,7 @@ struct dentry *aufs_create_dir(const char *name, struct dentry *parent)
 }
  
 static int enabled = 1;
+
 //对应于打开的aufs文件的读取方法
 static ssize_t aufs_file_read(struct file *fle, char __user *buf, size_t nbytes, loff_t *ppos)
 {
@@ -161,6 +162,7 @@ static ssize_t aufs_file_write(struct file *file, const char __user *buffer, siz
  
     return count;
 }
+
 //对应具体打开文件的文件操作方式
 static struct file_operations aufs_file_operations = {
     .read = aufs_file_read,
