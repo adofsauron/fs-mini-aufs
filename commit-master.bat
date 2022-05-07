@@ -1,7 +1,7 @@
 
 git add .
 
-git commit -m "fix main"
+git commit -m "fix master"
 
 git push -u origin master
 
