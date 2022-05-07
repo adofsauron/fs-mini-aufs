@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="aufs">
+      <UniqueIdentifier>{485ba9eb-b6c3-474c-958c-426b6ec55f9d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\aufs\aufs.c">
+      <Filter>aufs</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\aufs\dentry.h">
+      <Filter>aufs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\aufs\file.h">
+      <Filter>aufs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\aufs\header.h">
+      <Filter>aufs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\aufs\node.h">
+      <Filter>aufs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\aufs\supper.h">
+      <Filter>aufs</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\aufs\Makefile">
+      <Filter>aufs</Filter>
+    </None>
+  </ItemGroup>
+</Project>
