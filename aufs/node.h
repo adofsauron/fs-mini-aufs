@@ -13,7 +13,6 @@ int aufs_mkdir(struct inode *dir, struct dentry *dentry, int mode);
 
 int aufs_create(struct inode *dir, struct dentry *dentry, int mode);
 
-
 struct inode *aufs_get_inode(struct super_block *sb, int mode, dev_t dev)
 {
     struct inode *inode = new_inode(sb);

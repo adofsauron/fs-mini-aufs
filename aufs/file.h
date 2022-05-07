@@ -21,7 +21,6 @@ ssize_t aufs_file_read(struct file *fle, char __user *buf, size_t nbytes, loff_t
 // 对应于打开的aufs文件的写入方法
 ssize_t aufs_file_write(struct file *file, const char __user *buffer, size_t count, loff_t *ppos);
 
-
 struct dentry *aufs_create_file(const char *name, mode_t mode,
             struct dentry *parent, void *data,
             struct file_operations *fops)
