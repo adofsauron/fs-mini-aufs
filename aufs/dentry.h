@@ -6,8 +6,10 @@
 extern struct vfsmount *aufs_mount;
 
 // 根据父dentry、mode、name创建子dentry
-int aufs_create_by_name(const char *name, mode_t mode,
-        struct dentry *parent, struct dentry **dentry)
+int aufs_create_by_name(const char *name, mode_t mode, struct dentry *parent, struct dentry **dentry);
+
+
+int aufs_create_by_name(const char *name, mode_t mode, struct dentry *parent, struct dentry **dentry)
 {
     int error = 0;
  
