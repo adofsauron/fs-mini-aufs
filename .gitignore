@@ -1,3 +1,4 @@
 .vscode/
 .vs/
-sln/.vs/
+sln/aufs/.vs/
+sln/aufs/obj/
