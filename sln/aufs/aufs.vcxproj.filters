@@ -4,10 +4,154 @@
     <Filter Include="aufs">
       <UniqueIdentifier>{485ba9eb-b6c3-474c-958c-426b6ec55f9d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd">
+      <UniqueIdentifier>{f70a4860-9949-410d-8c36-3c425cd42990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse">
+      <UniqueIdentifier>{f1ec07a1-f68c-4c24-b9cf-99237148b1ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse\include">
+      <UniqueIdentifier>{4ce53f74-f679-409b-9bdc-25980a1017a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse\lib">
+      <UniqueIdentifier>{6c34616d-b3a0-4aa2-8bac-418846890336}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse\test">
+      <UniqueIdentifier>{6093ca7a-b935-4f8e-b83a-6d48dbe1a528}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse\util">
+      <UniqueIdentifier>{9ea8dd91-385e-4fb9-873f-7fa076e9a5d7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse\doc">
+      <UniqueIdentifier>{7e69a9c3-d546-46c3-80de-d665905ea367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\libfuse\lib\modules">
+      <UniqueIdentifier>{35f47761-5651-4595-836e-2285499db3b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\sshfs">
+      <UniqueIdentifier>{4a4f2c7f-74bf-43d0-8ac3-cff515e9ad45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\sshfs\compat">
+      <UniqueIdentifier>{c5ae74f5-f4be-4ef5-afe0-d9ddcfdd625c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\sshfs\test">
+      <UniqueIdentifier>{1fe34867-c6d2-4009-a38f-ee84cecbad29}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\sshfs\utils">
+      <UniqueIdentifier>{97a3e2f8-86bd-40c7-affc-09212a8d0d3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\osspd">
+      <UniqueIdentifier>{db02ce1d-029a-406d-8801-364117a6bc27}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
       <Filter>aufs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\buffer.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\cuse_lowlevel.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_log.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_loop.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_loop_mt.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_lowlevel.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_opt.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_signals.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\helper.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\mount.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\mount_bsd.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\mount_util.c">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\modules\iconv.c">
+      <Filter>3rd\libfuse\lib\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\lib\modules\subdir.c">
+      <Filter>3rd\libfuse\lib\modules</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\util\fusermount.c">
+      <Filter>3rd\libfuse\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\util\mount.fuse.c">
+      <Filter>3rd\libfuse\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\test\readdir_inode.c">
+      <Filter>3rd\libfuse\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\test\stracedecode.c">
+      <Filter>3rd\libfuse\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\test\test_setattr.c">
+      <Filter>3rd\libfuse\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\test\test_syscalls.c">
+      <Filter>3rd\libfuse\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\test\test_write_cache.c">
+      <Filter>3rd\libfuse\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\test\wrong_command.c">
+      <Filter>3rd\libfuse\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\sshfs\cache.c">
+      <Filter>3rd\sshfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\sshfs\sshfs.c">
+      <Filter>3rd\sshfs</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\sshfs\compat\darwin_compat.c">
+      <Filter>3rd\sshfs\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\sshfs\compat\fuse_opt.c">
+      <Filter>3rd\sshfs\compat</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\sshfs\test\wrong_command.c">
+      <Filter>3rd\sshfs\test</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\ossp.c">
+      <Filter>3rd\osspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\ossp-alsap.c">
+      <Filter>3rd\osspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\osspd.c">
+      <Filter>3rd\osspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\ossp-padsp.c">
+      <Filter>3rd\osspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\ossp-slave.c">
+      <Filter>3rd\osspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\ossp-util.c">
+      <Filter>3rd\osspd</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\osspd\osstest.c">
+      <Filter>3rd\osspd</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -26,10 +170,165 @@
     <ClInclude Include="..\..\aufs\supper.h">
       <Filter>aufs</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\cuse_lowlevel.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_common.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_kernel.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_log.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_lowlevel.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_opt.h">
+      <Filter>3rd\libfuse\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\lib\fuse_i.h">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\lib\fuse_misc.h">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\lib\mount_util.h">
+      <Filter>3rd\libfuse\lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\sshfs\cache.h">
+      <Filter>3rd\sshfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\sshfs\compat\darwin_compat.h">
+      <Filter>3rd\sshfs\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\sshfs\compat\fuse_opt.h">
+      <Filter>3rd\sshfs\compat</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\osspd\ossp.h">
+      <Filter>3rd\osspd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\osspd\ossp-slave.h">
+      <Filter>3rd\osspd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\osspd\ossp-util.h">
+      <Filter>3rd\osspd</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\aufs\Makefile">
       <Filter>aufs</Filter>
     </None>
+    <None Include="..\..\3rd\libfuse\include\meson.build">
+      <Filter>3rd\libfuse\include</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\lib\fuse_versionscript">
+      <Filter>3rd\libfuse\lib</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\lib\meson.build">
+      <Filter>3rd\libfuse\lib</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\.gitignore">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\Doxyfile">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\fast17-vangoor.pdf">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\fusermount3.1">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\mainpage.dox">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\meson.build">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\mount.fuse3.8">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\doc\README.NFS">
+      <Filter>3rd\libfuse\doc</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\util\fuse.conf">
+      <Filter>3rd\libfuse\util</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\meson.build">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\pytest.ini">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\.gitignore">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\conftest.py">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\test_ctests.py">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\test_examples.py">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\util.py">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\travis-build.sh">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\test\travis-install.sh">
+      <Filter>3rd\libfuse\test</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\README.md">
+      <Filter>3rd\libfuse</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\README.rst">
+      <Filter>3rd\sshfs</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\appveyor-build.sh">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\conftest.py">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\lint.sh">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\test_sshfs.py">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\travis-build.sh">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\travis-install.sh">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\test\util.py">
+      <Filter>3rd\sshfs\test</Filter>
+    </None>
+    <None Include="..\..\3rd\sshfs\utils\install_helper.sh">
+      <Filter>3rd\sshfs\utils</Filter>
+    </None>
+    <None Include="..\..\3rd\osspd\Makefile">
+      <Filter>3rd\osspd</Filter>
+    </None>
+    <None Include="..\..\3rd\osspd\README">
+      <Filter>3rd\osspd</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\3rd\libfuse\doc\kernel.txt">
+      <Filter>3rd\libfuse\doc</Filter>
+    </Text>
+    <Text Include="..\..\3rd\libfuse\test\lsan_suppress.txt">
+      <Filter>3rd\libfuse\test</Filter>
+    </Text>
   </ItemGroup>
 </Project>

@@ -75,9 +75,60 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="..\..\3rd\libfuse\lib\buffer.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\cuse_lowlevel.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_log.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_loop.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_loop_mt.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_lowlevel.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_opt.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\fuse_signals.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\helper.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\modules\iconv.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\modules\subdir.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\mount.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\mount_bsd.c" />
+    <ClCompile Include="..\..\3rd\libfuse\lib\mount_util.c" />
+    <ClCompile Include="..\..\3rd\libfuse\test\readdir_inode.c" />
+    <ClCompile Include="..\..\3rd\libfuse\test\stracedecode.c" />
+    <ClCompile Include="..\..\3rd\libfuse\test\test_setattr.c" />
+    <ClCompile Include="..\..\3rd\libfuse\test\test_syscalls.c" />
+    <ClCompile Include="..\..\3rd\libfuse\test\test_write_cache.c" />
+    <ClCompile Include="..\..\3rd\libfuse\test\wrong_command.c" />
+    <ClCompile Include="..\..\3rd\libfuse\util\fusermount.c" />
+    <ClCompile Include="..\..\3rd\libfuse\util\mount.fuse.c" />
+    <ClCompile Include="..\..\3rd\osspd\ossp-alsap.c" />
+    <ClCompile Include="..\..\3rd\osspd\ossp-padsp.c" />
+    <ClCompile Include="..\..\3rd\osspd\ossp-slave.c" />
+    <ClCompile Include="..\..\3rd\osspd\ossp-util.c" />
+    <ClCompile Include="..\..\3rd\osspd\ossp.c" />
+    <ClCompile Include="..\..\3rd\osspd\osspd.c" />
+    <ClCompile Include="..\..\3rd\osspd\osstest.c" />
+    <ClCompile Include="..\..\3rd\sshfs\cache.c" />
+    <ClCompile Include="..\..\3rd\sshfs\compat\darwin_compat.c" />
+    <ClCompile Include="..\..\3rd\sshfs\compat\fuse_opt.c" />
+    <ClCompile Include="..\..\3rd\sshfs\sshfs.c" />
+    <ClCompile Include="..\..\3rd\sshfs\test\wrong_command.c" />
     <ClCompile Include="..\..\aufs\aufs.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\3rd\libfuse\include\cuse_lowlevel.h" />
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse.h" />
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_common.h" />
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_kernel.h" />
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_log.h" />
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_lowlevel.h" />
+    <ClInclude Include="..\..\3rd\libfuse\include\fuse_opt.h" />
+    <ClInclude Include="..\..\3rd\libfuse\lib\fuse_i.h" />
+    <ClInclude Include="..\..\3rd\libfuse\lib\fuse_misc.h" />
+    <ClInclude Include="..\..\3rd\libfuse\lib\mount_util.h" />
+    <ClInclude Include="..\..\3rd\osspd\ossp-slave.h" />
+    <ClInclude Include="..\..\3rd\osspd\ossp-util.h" />
+    <ClInclude Include="..\..\3rd\osspd\ossp.h" />
+    <ClInclude Include="..\..\3rd\sshfs\cache.h" />
+    <ClInclude Include="..\..\3rd\sshfs\compat\darwin_compat.h" />
+    <ClInclude Include="..\..\3rd\sshfs\compat\fuse_opt.h" />
     <ClInclude Include="..\..\aufs\dentry.h" />
     <ClInclude Include="..\..\aufs\file.h" />
     <ClInclude Include="..\..\aufs\header.h" />
@@ -85,11 +136,49 @@
     <ClInclude Include="..\..\aufs\supper.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\3rd\libfuse\doc\.gitignore" />
+    <None Include="..\..\3rd\libfuse\doc\Doxyfile" />
+    <None Include="..\..\3rd\libfuse\doc\fast17-vangoor.pdf" />
+    <None Include="..\..\3rd\libfuse\doc\fusermount3.1" />
+    <None Include="..\..\3rd\libfuse\doc\mainpage.dox" />
+    <None Include="..\..\3rd\libfuse\doc\meson.build" />
+    <None Include="..\..\3rd\libfuse\doc\mount.fuse3.8" />
+    <None Include="..\..\3rd\libfuse\doc\README.NFS" />
+    <None Include="..\..\3rd\libfuse\include\meson.build" />
+    <None Include="..\..\3rd\libfuse\lib\fuse_versionscript" />
+    <None Include="..\..\3rd\libfuse\lib\meson.build" />
+    <None Include="..\..\3rd\libfuse\README.md" />
+    <None Include="..\..\3rd\libfuse\test\.gitignore" />
+    <None Include="..\..\3rd\libfuse\test\conftest.py" />
+    <None Include="..\..\3rd\libfuse\test\meson.build" />
+    <None Include="..\..\3rd\libfuse\test\pytest.ini" />
+    <None Include="..\..\3rd\libfuse\test\test_ctests.py" />
+    <None Include="..\..\3rd\libfuse\test\test_examples.py" />
+    <None Include="..\..\3rd\libfuse\test\travis-build.sh" />
+    <None Include="..\..\3rd\libfuse\test\travis-install.sh" />
+    <None Include="..\..\3rd\libfuse\test\util.py" />
+    <None Include="..\..\3rd\libfuse\util\fuse.conf" />
+    <None Include="..\..\3rd\osspd\Makefile" />
+    <None Include="..\..\3rd\osspd\README" />
+    <None Include="..\..\3rd\sshfs\README.rst" />
+    <None Include="..\..\3rd\sshfs\test\appveyor-build.sh" />
+    <None Include="..\..\3rd\sshfs\test\conftest.py" />
+    <None Include="..\..\3rd\sshfs\test\lint.sh" />
+    <None Include="..\..\3rd\sshfs\test\test_sshfs.py" />
+    <None Include="..\..\3rd\sshfs\test\travis-build.sh" />
+    <None Include="..\..\3rd\sshfs\test\travis-install.sh" />
+    <None Include="..\..\3rd\sshfs\test\util.py" />
+    <None Include="..\..\3rd\sshfs\utils\install_helper.sh" />
     <None Include="..\..\aufs\Makefile" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="..\..\3rd\libfuse\doc\kernel.txt" />
+    <Text Include="..\..\3rd\libfuse\test\lsan_suppress.txt" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <AdditionalIncludeDirectories>$(DevEnvDir)VC\Linux\include\usr\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>linux;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
