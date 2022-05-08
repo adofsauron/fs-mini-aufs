@@ -144,7 +144,6 @@
     <None Include="..\..\3rd\libfuse\doc\meson.build" />
     <None Include="..\..\3rd\libfuse\doc\mount.fuse3.8" />
     <None Include="..\..\3rd\libfuse\doc\README.NFS" />
-    <None Include="..\..\3rd\libfuse\include\meson.build" />
     <None Include="..\..\3rd\libfuse\lib\fuse_versionscript" />
     <None Include="..\..\3rd\libfuse\lib\meson.build" />
     <None Include="..\..\3rd\libfuse\README.md" />
