@@ -223,9 +223,6 @@
     <None Include="..\..\aufs\Makefile">
       <Filter>aufs</Filter>
     </None>
-    <None Include="..\..\3rd\libfuse\lib\fuse_versionscript">
-      <Filter>3rd\libfuse\lib</Filter>
-    </None>
     <None Include="..\..\3rd\libfuse\lib\meson.build">
       <Filter>3rd\libfuse\lib</Filter>
     </None>
