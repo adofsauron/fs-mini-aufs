@@ -43,6 +43,9 @@
     <Filter Include="3rd\osspd">
       <UniqueIdentifier>{db02ce1d-029a-406d-8801-364117a6bc27}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\libfuse\example">
+      <UniqueIdentifier>{bf8430cf-0edf-419c-b88c-b8936d2ce8cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -153,6 +156,60 @@
     <ClCompile Include="..\..\3rd\osspd\osstest.c">
       <Filter>3rd\osspd</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\cuse.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\cuse_client.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\hello.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\hello_ll.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\invalidate_path.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\ioctl.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\ioctl_client.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\notify_inval_entry.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\notify_inval_inode.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\notify_store_retrieve.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\null.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough_fh.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough_hp.cc">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough_ll.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\poll.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\poll_client.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\libfuse\example\printcap.c">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -217,6 +274,15 @@
     </ClInclude>
     <ClInclude Include="..\..\3rd\osspd\ossp-util.h">
       <Filter>3rd\osspd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\example\cxxopts.hpp">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\example\ioctl.h">
+      <Filter>3rd\libfuse\example</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\libfuse\example\passthrough_helpers.h">
+      <Filter>3rd\libfuse\example</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -315,6 +381,9 @@
     </None>
     <None Include="..\..\3rd\osspd\README">
       <Filter>3rd\osspd</Filter>
+    </None>
+    <None Include="..\..\3rd\libfuse\example\meson.build">
+      <Filter>3rd\libfuse\example</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

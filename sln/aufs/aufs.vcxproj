@@ -75,6 +75,24 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="..\..\3rd\libfuse\example\cuse.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\cuse_client.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\hello.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\hello_ll.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\invalidate_path.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\ioctl.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\ioctl_client.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\notify_inval_entry.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\notify_inval_inode.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\notify_store_retrieve.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\null.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough_fh.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough_hp.cc" />
+    <ClCompile Include="..\..\3rd\libfuse\example\passthrough_ll.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\poll.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\poll_client.c" />
+    <ClCompile Include="..\..\3rd\libfuse\example\printcap.c" />
     <ClCompile Include="..\..\3rd\libfuse\lib\buffer.c" />
     <ClCompile Include="..\..\3rd\libfuse\lib\cuse_lowlevel.c" />
     <ClCompile Include="..\..\3rd\libfuse\lib\fuse.c" />
@@ -113,6 +131,9 @@
     <ClCompile Include="..\..\aufs\aufs.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\3rd\libfuse\example\cxxopts.hpp" />
+    <ClInclude Include="..\..\3rd\libfuse\example\ioctl.h" />
+    <ClInclude Include="..\..\3rd\libfuse\example\passthrough_helpers.h" />
     <ClInclude Include="..\..\3rd\libfuse\include\cuse_lowlevel.h" />
     <ClInclude Include="..\..\3rd\libfuse\include\fuse.h" />
     <ClInclude Include="..\..\3rd\libfuse\include\fuse_common.h" />
@@ -144,6 +165,7 @@
     <None Include="..\..\3rd\libfuse\doc\meson.build" />
     <None Include="..\..\3rd\libfuse\doc\mount.fuse3.8" />
     <None Include="..\..\3rd\libfuse\doc\README.NFS" />
+    <None Include="..\..\3rd\libfuse\example\meson.build" />
     <None Include="..\..\3rd\libfuse\lib\meson.build" />
     <None Include="..\..\3rd\libfuse\README.md" />
     <None Include="..\..\3rd\libfuse\test\.gitignore" />
