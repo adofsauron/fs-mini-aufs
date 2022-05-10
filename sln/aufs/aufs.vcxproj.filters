@@ -118,6 +118,30 @@
     <Filter Include="3rd\glusterfs\rpc\xdr\src">
       <UniqueIdentifier>{2070b0d1-a549-43e2-90b5-18a652758772}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\glusterfs\contrib">
+      <UniqueIdentifier>{f67fe025-8a84-42de-a4cb-60fa41833253}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\fuse-include">
+      <UniqueIdentifier>{239be7cb-944d-4692-9814-e5463454cc33}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\fuse-lib">
+      <UniqueIdentifier>{58bc500e-0078-44fc-b19b-8ecdcd56a943}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\rbtree">
+      <UniqueIdentifier>{c61c9695-4e70-4bb3-bbfb-b58f5c4b689f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\mount">
+      <UniqueIdentifier>{5e4b4f6c-9cea-4599-85ea-987e243575ec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\umountd">
+      <UniqueIdentifier>{d6d36a34-a39a-46c1-8f12-ba5c1380a650}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\userspace-rcu">
+      <UniqueIdentifier>{1886c818-1d46-48e0-929e-009a61a892c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\contrib\xxhash">
+      <UniqueIdentifier>{b7a84a96-803a-42bf-b21c-5ada334bc265}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -699,6 +723,30 @@
     <ClCompile Include="..\..\3rd\glusterfs\rpc\xdr\src\xdr-nfs3.c">
       <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\fuse-lib\misc.c">
+      <Filter>3rd\glusterfs\contrib\fuse-lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\fuse-lib\mount.c">
+      <Filter>3rd\glusterfs\contrib\fuse-lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\fuse-lib\mount-common.c">
+      <Filter>3rd\glusterfs\contrib\fuse-lib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\rbtree\rb.c">
+      <Filter>3rd\glusterfs\contrib\rbtree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\mount\mntent.c">
+      <Filter>3rd\glusterfs\contrib\mount</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\xxhash\xxhash.c">
+      <Filter>3rd\glusterfs\contrib\xxhash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\xxhash\xxhsum.c">
+      <Filter>3rd\glusterfs\contrib\xxhash</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\umountd\umountd.c">
+      <Filter>3rd\glusterfs\contrib\umountd</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -1084,6 +1132,48 @@
     </ClInclude>
     <ClInclude Include="..\..\3rd\glusterfs\rpc\xdr\src\xdr-nfs3.h">
       <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-include\fuse_kernel.h">
+      <Filter>3rd\glusterfs\contrib\fuse-include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-include\fuse_kernel_macfuse.h">
+      <Filter>3rd\glusterfs\contrib\fuse-include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-include\fuse-misc.h">
+      <Filter>3rd\glusterfs\contrib\fuse-include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-include\fuse-mount.h">
+      <Filter>3rd\glusterfs\contrib\fuse-include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-include\mount_util.h">
+      <Filter>3rd\glusterfs\contrib\fuse-include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-lib\mount-gluster-compat.h">
+      <Filter>3rd\glusterfs\contrib\fuse-lib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\rbtree\rb.h">
+      <Filter>3rd\glusterfs\contrib\rbtree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\mount\mntent_compat.h">
+      <Filter>3rd\glusterfs\contrib\mount</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\xxhash\xxhash.h">
+      <Filter>3rd\glusterfs\contrib\xxhash</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\rculist-extra.h">
+      <Filter>3rd\glusterfs\contrib\userspace-rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\static-wfcqueue.h">
+      <Filter>3rd\glusterfs\contrib\userspace-rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\static-wfstack.h">
+      <Filter>3rd\glusterfs\contrib\userspace-rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\wfcqueue.h">
+      <Filter>3rd\glusterfs\contrib\userspace-rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\wfstack.h">
+      <Filter>3rd\glusterfs\contrib\userspace-rcu</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
