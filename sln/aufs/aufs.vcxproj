@@ -137,6 +137,8 @@
     <ClCompile Include="..\..\3rd\glusterfs\contrib\fuse-lib\mount.c" />
     <ClCompile Include="..\..\3rd\glusterfs\contrib\mount\mntent.c" />
     <ClCompile Include="..\..\3rd\glusterfs\contrib\rbtree\rb.c" />
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\timer-wheel\find_last_bit.c" />
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\timer-wheel\timer-wheel.c" />
     <ClCompile Include="..\..\3rd\glusterfs\contrib\umountd\umountd.c" />
     <ClCompile Include="..\..\3rd\glusterfs\contrib\xxhash\xxhash.c" />
     <ClCompile Include="..\..\3rd\glusterfs\contrib\xxhash\xxhsum.c" />
@@ -296,6 +298,7 @@
     <ClInclude Include="..\..\3rd\glusterfs\contrib\fuse-lib\mount-gluster-compat.h" />
     <ClInclude Include="..\..\3rd\glusterfs\contrib\mount\mntent_compat.h" />
     <ClInclude Include="..\..\3rd\glusterfs\contrib\rbtree\rb.h" />
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\timer-wheel\timer-wheel.h" />
     <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\rculist-extra.h" />
     <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\static-wfcqueue.h" />
     <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\static-wfstack.h" />

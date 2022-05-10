@@ -142,6 +142,9 @@
     <Filter Include="3rd\glusterfs\contrib\xxhash">
       <UniqueIdentifier>{b7a84a96-803a-42bf-b21c-5ada334bc265}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\glusterfs\contrib\timer-wheel">
+      <UniqueIdentifier>{fccd9693-ab4c-4177-be2f-433a9d3d69c4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -747,6 +750,12 @@
     <ClCompile Include="..\..\3rd\glusterfs\contrib\umountd\umountd.c">
       <Filter>3rd\glusterfs\contrib\umountd</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\timer-wheel\find_last_bit.c">
+      <Filter>3rd\glusterfs\contrib\timer-wheel</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\contrib\timer-wheel\timer-wheel.c">
+      <Filter>3rd\glusterfs\contrib\timer-wheel</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -1174,6 +1183,9 @@
     </ClInclude>
     <ClInclude Include="..\..\3rd\glusterfs\contrib\userspace-rcu\wfstack.h">
       <Filter>3rd\glusterfs\contrib\userspace-rcu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\contrib\timer-wheel\timer-wheel.h">
+      <Filter>3rd\glusterfs\contrib\timer-wheel</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
