@@ -100,6 +100,18 @@
     <Filter Include="3rd\glusterfs\libglusterfs\src\glusterfs">
       <UniqueIdentifier>{79a7261a-784f-4814-9f82-96425b3716f3}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\glusterfs\api\examples">
+      <UniqueIdentifier>{e1096942-ca68-4f19-9e11-e009e069be1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\heal">
+      <UniqueIdentifier>{f313af54-aecf-47f5-9d32-793992264b72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\heal\src">
+      <UniqueIdentifier>{ac3e3dc3-fda1-4d64-879c-94e242668c4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\libglusterfs\src\unittest">
+      <UniqueIdentifier>{be3f6ec6-0a94-45e1-8e4d-24410218e6f1}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -657,6 +669,21 @@
     <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-rpcclnt.c">
       <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\examples\glfsxmp.c">
+      <Filter>3rd\glusterfs\api\examples</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\heal\src\glfs-heal.c">
+      <Filter>3rd\glusterfs\heal\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\unittest\global_mock.c">
+      <Filter>3rd\glusterfs\libglusterfs\src\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\unittest\log_mock.c">
+      <Filter>3rd\glusterfs\libglusterfs\src\unittest</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\unittest\mem_pool_unittest.c">
+      <Filter>3rd\glusterfs\libglusterfs\src\unittest</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -1025,6 +1052,9 @@
     <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-rpcclnt.h">
       <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\unittest\unittest.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\unittest</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\aufs\Makefile">
@@ -1173,6 +1203,15 @@
     </None>
     <None Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\Makefile.am">
       <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\examples\autogen.sh">
+      <Filter>3rd\glusterfs\api\examples</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\examples\configure.ac">
+      <Filter>3rd\glusterfs\api\examples</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\examples\README">
+      <Filter>3rd\glusterfs\api\examples</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
