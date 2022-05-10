@@ -112,6 +112,12 @@
     <Filter Include="3rd\glusterfs\libglusterfs\src\unittest">
       <UniqueIdentifier>{be3f6ec6-0a94-45e1-8e4d-24410218e6f1}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\glusterfs\rpc\xdr">
+      <UniqueIdentifier>{21af7bc7-997f-488f-a48d-528c80941d4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\rpc\xdr\src">
+      <UniqueIdentifier>{2070b0d1-a549-43e2-90b5-18a652758772}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -684,6 +690,15 @@
     <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\unittest\mem_pool_unittest.c">
       <Filter>3rd\glusterfs\libglusterfs\src\unittest</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\xdr\src\msg-nfs3.c">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\xdr\src\xdr-generic.c">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\xdr\src\xdr-nfs3.c">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -1055,6 +1070,21 @@
     <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\unittest\unittest.h">
       <Filter>3rd\glusterfs\libglusterfs\src\unittest</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\xdr\src\glusterfs3.h">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\xdr\src\msg-nfs3.h">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\xdr\src\rpc-pragmas.h">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\xdr\src\xdr-generic.h">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\xdr\src\xdr-nfs3.h">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\aufs\Makefile">
@@ -1212,6 +1242,42 @@
     </None>
     <None Include="..\..\3rd\glusterfs\api\examples\README">
       <Filter>3rd\glusterfs\api\examples</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\acl3-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\changelog-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\cli1-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\glusterd1-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\glusterfs4-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\libgfxdr.sym">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\Makefile.am">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\mount3udp.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\nlm4-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\nsm-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\portmap-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\xdr\src\rpc-common-xdr.x">
+      <Filter>3rd\glusterfs\rpc\xdr\src</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
