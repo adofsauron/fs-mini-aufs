@@ -4,18 +4,18 @@
 #include "header.h"
 
 // 根据创建的aufs文件系统的 super_block创建具体的inode结构体
-struct inode *aufs_get_inode(struct super_block *sb, int mode, dev_t dev);
+struct inode* aufs_get_inode(struct super_block* sb, int mode, dev_t dev);
 
 // 把创建的inode和dentry结构体连接起来
-int aufs_mknod(struct inode *dir, struct dentry *dentry, int mode, dev_t dev);
+int aufs_mknod(struct inode* dir, struct dentry* dentry, int mode, dev_t dev);
 
-int aufs_mkdir(struct inode *dir, struct dentry *dentry, int mode);
+int aufs_mkdir(struct inode* dir, struct dentry* dentry, int mode);
 
-int aufs_create(struct inode *dir, struct dentry *dentry, int mode);
+int aufs_create(struct inode* dir, struct dentry* dentry, int mode);
 
-struct inode *aufs_get_inode(struct super_block *sb, int mode, dev_t dev)
+struct inode* aufs_get_inode(struct super_block* sb, int mode, dev_t dev)
 {
-    struct inode *inode = new_inode(sb);
+    struct inode* inode = new_inode(sb);
  
     if (inode) {
         inode->i_mode = mode;
@@ -43,9 +43,9 @@ struct inode *aufs_get_inode(struct super_block *sb, int mode, dev_t dev)
     return inode;
 }
 
-int aufs_mknod(struct inode *dir, struct dentry *dentry, int mode, dev_t dev)
+int aufs_mknod(struct inode* dir, struct dentry* dentry, int mode, dev_t dev)
 {
-    struct inode * inode;
+    struct inode*  inode;
     int error = -EPERM;
  
     if (dentry->d_inode)
@@ -60,7 +60,7 @@ int aufs_mknod(struct inode *dir, struct dentry *dentry, int mode, dev_t dev)
     return error;
 }
  
-int aufs_mkdir(struct inode *dir, struct dentry *dentry, int mode)
+int aufs_mkdir(struct inode* dir, struct dentry* dentry, int mode)
 {
     int res;
  
@@ -72,7 +72,7 @@ int aufs_mkdir(struct inode *dir, struct dentry *dentry, int mode)
     return res;
 }
  
-int aufs_create(struct inode *dir, struct dentry *dentry, int mode)
+int aufs_create(struct inode* dir, struct dentry* dentry, int mode)
 {
     return aufs_mknod(dir, dentry, mode | S_IFREG, 0);
 }

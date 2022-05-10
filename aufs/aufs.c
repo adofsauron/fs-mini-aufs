@@ -5,7 +5,7 @@
 #include "file.h"
 
 // aufs文件系统的挂载点
-struct vfsmount *aufs_mount;
+struct vfsmount* aufs_mount;
 
 // 对应具体打开文件的文件操作方式
 static struct file_operations aufs_file_operations = {
@@ -24,7 +24,7 @@ static struct file_system_type aufs_type = {
 static int __init aufs_init(void)
 {
     int ret = 0;
-    struct dentry *pslot = NULL;
+    struct dentry* pslot = NULL;
      
     ret = register_filesystem(&aufs_type);
     if (ret) {
