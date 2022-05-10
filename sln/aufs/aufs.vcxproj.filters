@@ -55,6 +55,51 @@
     <Filter Include="3rd\fuse-ext2\tool">
       <UniqueIdentifier>{afc3bd02-1d75-47da-9e54-3af89cdca756}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\glusterfs">
+      <UniqueIdentifier>{a1b91cd2-3257-4c5c-a3da-27e05e893617}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\libglusterfs">
+      <UniqueIdentifier>{fd65322a-9292-4ea5-908b-bbfe2f816091}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\libglusterfs\src">
+      <UniqueIdentifier>{939f815a-6e54-4d8b-91cd-918629d06ba2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\cli">
+      <UniqueIdentifier>{1b165bca-96ef-41df-be7d-435921e84c78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\cli\src">
+      <UniqueIdentifier>{96fb5180-019f-4d38-aadd-760e4fb20495}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\api">
+      <UniqueIdentifier>{0e236fcb-afb2-444b-a650-d21b09ca7308}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\api\src">
+      <UniqueIdentifier>{05b10e99-b355-4305-b425-fb22f0aeef15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\glusterfsd">
+      <UniqueIdentifier>{6f00daa8-6d06-4a7c-9c76-4fddd320ecbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\glusterfsd\src">
+      <UniqueIdentifier>{c4967314-0cf7-4b6f-9bd2-11583e6fdd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\rpc">
+      <UniqueIdentifier>{ef6da2e3-71b5-4c70-abc9-33fb0c4d6de8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\rpc\rpc-lib">
+      <UniqueIdentifier>{79df948d-7e7f-43f9-97c7-5c6df41f8e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\rpc\rpc-transport">
+      <UniqueIdentifier>{bed98da1-8133-4e0f-bd04-550d22b7e788}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\rpc\rpc-lib\src">
+      <UniqueIdentifier>{1778cf84-600d-416b-bdbf-db8327e95d91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\rpc\rpc-transport\src">
+      <UniqueIdentifier>{f4bfee43-9d16-440c-b375-35d48dc9d248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\glusterfs\libglusterfs\src\glusterfs">
+      <UniqueIdentifier>{79a7261a-784f-4814-9f82-96425b3716f3}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -324,6 +369,294 @@
     <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_write.c">
       <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\async.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\call-stub.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\checksum.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\circ-buff.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\client_t.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\cluster-syncop.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\common-utils.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\compat.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\compat-errno.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\ctx.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\daemon.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\default-args.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\defaults-tmpl.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\dict.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\event.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\event-epoll.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\event-history.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\event-poll.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\events.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\fd.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\fd-lk.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\gf-dirent.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\gf-io.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\gf-io-common.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\gf-io-legacy.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\gf-io-uring.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\gidcache.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\globals.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\graph.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\graph-print.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\hashfn.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\inode.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\iobuf.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\latency.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\logging.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\mem-pool.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\monitoring.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\options.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\parse-utils.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\quota-common-utils.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\rbthash.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\refcount.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\rot-buffs.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\run.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\run_fork.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\stack.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\statedump.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\store.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\strfd.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\syncop.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\syncop-utils.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\syscall.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\throttle-tbf.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\timer.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\timespec.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\trie.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\libglusterfs\src\xlator.c">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-global.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-misc.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-parser.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-peer.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-snapshot.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-system.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-cmd-volume.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-quotad-client.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-rl.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-rpc-ops.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\cli-xml-output.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\input.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\cli\src\registry.c">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\src\glfs.c">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\src\glfs-fops.c">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\src\glfs-handleops.c">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\src\glfs-mgmt.c">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\src\glfs-primary.c">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\api\src\glfs-resolve.c">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\glusterfsd\src\gf_attach.c">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\glusterfsd\src\glusterfsd.c">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\glusterfsd\src\glusterfsd-mgmt.c">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-transport\socket\src\name.c">
+      <Filter>3rd\glusterfs\rpc\rpc-transport\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-transport\socket\src\socket.c">
+      <Filter>3rd\glusterfs\rpc\rpc-transport\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\auth-glusterfs.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\auth-null.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\auth-unix.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\autoscale-threads.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\mgmt-pmap.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-clnt.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-clnt-ping.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-drc.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpcsvc.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpcsvc-auth.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-transport.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-rpc.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-rpcclnt.c">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -400,6 +733,297 @@
     </ClInclude>
     <ClInclude Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.h">
       <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\async.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\atomic.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\call-stub.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\checksum.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\circ-buff.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\client_t.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\cluster-syncop.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\common-utils.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\compat.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\compat-errno.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\compat-io_uring.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\compat-uuid.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\daemon.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\default-args.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\defaults.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\dict.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\event-history.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\events.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\fd.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\fd-lk.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gf-dirent.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gf-event.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gf-io.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gf-io-common.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gf-io-legacy.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gf-io-uring.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\gidcache.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\glfs-message-id.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\globals.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\glusterfs.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\glusterfs-acl.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\glusterfs-fops.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\graph-utils.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\hashfn.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\iatt.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\inode.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\iobuf.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\latency.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\libglusterfs-messages.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\list.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\lkowner.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\locking.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\logging.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\lvm-defaults.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\mem-pool.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\mem-types.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\monitoring.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\options.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\parse-utils.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\quota-common-utils.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\rbthash.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\refcount.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\revision.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\rot-buffs.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\run.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\stack.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\statedump.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\store.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\strfd.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\syncop.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\syncop-utils.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\syscall.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\template-component-messages.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\throttle-tbf.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\timer.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\timespec.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\trie.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\upcall-utils.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\glusterfs\xlator.h">
+      <Filter>3rd\glusterfs\libglusterfs\src\glusterfs</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\libglusterfs\src\changelog.h">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\cli\src\cli.h">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\cli\src\cli-cmd.h">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\cli\src\cli-mem-types.h">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\cli\src\cli-quotad-client.h">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\api\src\gfapi-messages.h">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\api\src\glfs.h">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\api\src\glfs-handles.h">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\api\src\glfs-internal.h">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\api\src\glfs-mem-types.h">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\glusterfsd\src\glusterfsd.h">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\glusterfsd\src\glusterfsd-mem-types.h">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\glusterfsd\src\glusterfsd-messages.h">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-transport\socket\src\name.h">
+      <Filter>3rd\glusterfs\rpc\rpc-transport\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-transport\socket\src\socket.h">
+      <Filter>3rd\glusterfs\rpc\rpc-transport\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-transport\socket\src\socket-mem-types.h">
+      <Filter>3rd\glusterfs\rpc\rpc-transport\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\protocol-common.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\protocol-utils.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-clnt.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-clnt-ping.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-drc.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-lib-messages.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpcsvc.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpcsvc-common.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\rpc-transport.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-common.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-rpc.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\xdr-rpcclnt.h">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -513,6 +1137,42 @@
     </None>
     <None Include="..\..\3rd\fuse-ext2\fuse-ext2\Makefile.am">
       <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\libglusterfs\src\graph.l">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\libglusterfs\src\graph.y">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\libglusterfs\src\libglusterfs.sym">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\libglusterfs\src\Makefile.am">
+      <Filter>3rd\glusterfs\libglusterfs\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\cli\src\Makefile.am">
+      <Filter>3rd\glusterfs\cli\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\src\gfapi.aliases">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\src\gfapi.map">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\src\Makefile.am">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\api\src\README.Symbol_Versions">
+      <Filter>3rd\glusterfs\api\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\glusterfsd\src\Makefile.am">
+      <Filter>3rd\glusterfs\glusterfsd\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\libgfrpc.sym">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
+    </None>
+    <None Include="..\..\3rd\glusterfs\rpc\rpc-lib\src\Makefile.am">
+      <Filter>3rd\glusterfs\rpc\rpc-lib\src</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
