@@ -75,6 +75,41 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_check.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_fillstatbuf.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_killfilebyinode.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_probe.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_readinode.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_writeinode.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.probe.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_access.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_chmod.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_chown.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_create.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_destroy.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_fgetattr.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_flush.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_fsync.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_getattr.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_getxattr.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_init.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_link.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_mkdir.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_mknod.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_open.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_read.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_readdir.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_readlink.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_release.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_rename.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_rmdir.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_statfs.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_symlink.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_truncate.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_unlink.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_utimens.c" />
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_write.c" />
     <ClCompile Include="..\..\3rd\libfuse\example\cuse.c" />
     <ClCompile Include="..\..\3rd\libfuse\example\cuse_client.c" />
     <ClCompile Include="..\..\3rd\libfuse\example\hello.c" />
@@ -131,6 +166,7 @@
     <ClCompile Include="..\..\aufs\aufs.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.h" />
     <ClInclude Include="..\..\3rd\libfuse\example\cxxopts.hpp" />
     <ClInclude Include="..\..\3rd\libfuse\example\ioctl.h" />
     <ClInclude Include="..\..\3rd\libfuse\example\passthrough_helpers.h" />
@@ -157,6 +193,10 @@
     <ClInclude Include="..\..\aufs\supper.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.install.m" />
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.uninstall.m" />
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.wait.m" />
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\Makefile.am" />
     <None Include="..\..\3rd\libfuse\doc\.gitignore" />
     <None Include="..\..\3rd\libfuse\doc\Doxyfile" />
     <None Include="..\..\3rd\libfuse\doc\fast17-vangoor.pdf" />

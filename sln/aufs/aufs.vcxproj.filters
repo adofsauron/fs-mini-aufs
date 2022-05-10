@@ -46,6 +46,15 @@
     <Filter Include="3rd\libfuse\example">
       <UniqueIdentifier>{bf8430cf-0edf-419c-b88c-b8936d2ce8cf}</UniqueIdentifier>
     </Filter>
+    <Filter Include="3rd\fuse-ext2">
+      <UniqueIdentifier>{96cd6aa0-6ea4-4bd3-a821-e87d7ac77287}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\fuse-ext2\fuse-ext2">
+      <UniqueIdentifier>{ac575e6c-9cea-475b-a6a6-b7eaa979f631}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="3rd\fuse-ext2\tool">
+      <UniqueIdentifier>{afc3bd02-1d75-47da-9e54-3af89cdca756}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\aufs\aufs.c">
@@ -210,6 +219,111 @@
     <ClCompile Include="..\..\3rd\libfuse\example\printcap.c">
       <Filter>3rd\libfuse\example</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_check.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_fillstatbuf.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_killfilebyinode.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_probe.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_readinode.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\do_writeinode.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.probe.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_access.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_chmod.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_chown.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_create.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_destroy.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_fgetattr.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_flush.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_fsync.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_getattr.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_getxattr.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_init.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_link.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_mkdir.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_mknod.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_open.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_read.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_readdir.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_readlink.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_release.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_rename.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_rmdir.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_statfs.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_symlink.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_truncate.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_unlink.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_utimens.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\3rd\fuse-ext2\fuse-ext2\op_write.c">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\aufs\dentry.h">
@@ -283,6 +397,9 @@
     </ClInclude>
     <ClInclude Include="..\..\3rd\libfuse\example\passthrough_helpers.h">
       <Filter>3rd\libfuse\example</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.h">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -384,6 +501,18 @@
     </None>
     <None Include="..\..\3rd\libfuse\example\meson.build">
       <Filter>3rd\libfuse\example</Filter>
+    </None>
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.install.m">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </None>
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.uninstall.m">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </None>
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\fuse-ext2.wait.m">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
+    </None>
+    <None Include="..\..\3rd\fuse-ext2\fuse-ext2\Makefile.am">
+      <Filter>3rd\fuse-ext2\fuse-ext2</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
