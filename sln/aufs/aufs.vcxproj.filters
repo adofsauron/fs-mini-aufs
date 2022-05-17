@@ -1315,12 +1315,6 @@
     <None Include="..\..\3rd\glusterfs\cli\src\Makefile.am">
       <Filter>3rd\glusterfs\cli\src</Filter>
     </None>
-    <None Include="..\..\3rd\glusterfs\api\src\gfapi.aliases">
-      <Filter>3rd\glusterfs\api\src</Filter>
-    </None>
-    <None Include="..\..\3rd\glusterfs\api\src\gfapi.map">
-      <Filter>3rd\glusterfs\api\src</Filter>
-    </None>
     <None Include="..\..\3rd\glusterfs\api\src\Makefile.am">
       <Filter>3rd\glusterfs\api\src</Filter>
     </None>

@@ -432,8 +432,6 @@
     <None Include="..\..\3rd\glusterfs\api\examples\autogen.sh" />
     <None Include="..\..\3rd\glusterfs\api\examples\configure.ac" />
     <None Include="..\..\3rd\glusterfs\api\examples\README" />
-    <None Include="..\..\3rd\glusterfs\api\src\gfapi.aliases" />
-    <None Include="..\..\3rd\glusterfs\api\src\gfapi.map" />
     <None Include="..\..\3rd\glusterfs\api\src\Makefile.am" />
     <None Include="..\..\3rd\glusterfs\api\src\README.Symbol_Versions" />
     <None Include="..\..\3rd\glusterfs\cli\src\Makefile.am" />
