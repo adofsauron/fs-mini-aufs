@@ -420,7 +420,6 @@
     <None Include="..\..\3rd\libfuse\doc\fusermount3.1" />
     <None Include="..\..\3rd\libfuse\doc\mainpage.dox" />
     <None Include="..\..\3rd\libfuse\doc\meson.build" />
-    <None Include="..\..\3rd\libfuse\doc\mount.fuse3.8" />
     <None Include="..\..\3rd\libfuse\doc\README.NFS" />
     <None Include="..\..\3rd\libfuse\example\meson.build" />
     <None Include="..\..\3rd\libfuse\lib\meson.build" />
