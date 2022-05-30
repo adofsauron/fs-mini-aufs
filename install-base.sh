@@ -1,4 +1,7 @@
 #!/bin/bash
 
 # centos
-yum install elfutils-libelf-devel -y
+
+yum install -y kernel
+
+yum install -y elfutils-libelf-devel
