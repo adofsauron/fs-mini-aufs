@@ -7,5 +7,6 @@ meson setup build
 
 cd build
 ninja
+ninja install
 
 cd -
