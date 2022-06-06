@@ -156,7 +156,7 @@ int main(int argc, char *argv[])
 	   fuse_opt_parse can free the defaults if other
 	   values are specified */
 	options.filename = strdup("hello");
-	options.contents = strdup("Hello World!\n");
+	options.contents = strdup("Hello World!\nthis is a good day!\n");
 
 	/* Parse options */
 	if (fuse_opt_parse(&args, &options, option_spec, NULL) == -1)
