@@ -40,7 +40,8 @@ static struct options {
 	const char *filename;
 	const char *contents;
 	int show_help;
-} options;
+} options, hack_options;
+
 
 #define OPTION(t, p)                           \
     { t, offsetof(struct options, p), 1 }
@@ -74,7 +75,13 @@ static int hello_getattr(const char *path, struct stat *stbuf,
 		stbuf->st_mode = S_IFREG | 0444;
 		stbuf->st_nlink = 1;
 		stbuf->st_size = strlen(options.contents);
-	} else
+	}
+	else if (strcmp(path + 1, hack_options.filename) == 0) {
+		stbuf->st_mode = S_IFREG | 0444;
+		stbuf->st_nlink = 1;
+		stbuf->st_size = strlen(hack_options.contents);
+	}
+	else
 		res = -ENOENT;
 
 	return res;
@@ -94,14 +101,17 @@ static int hello_readdir(const char *path, void *buf, fuse_fill_dir_t filler,
 	filler(buf, ".", NULL, 0, 0);
 	filler(buf, "..", NULL, 0, 0);
 	filler(buf, options.filename, NULL, 0, 0);
+	filler(buf, hack_options.filename, NULL, 0, 0);
 
 	return 0;
 }
 
 static int hello_open(const char *path, struct fuse_file_info *fi)
 {
-	if (strcmp(path+1, options.filename) != 0)
+	if ((strcmp(path + 1, options.filename) != 0)
+		&& (strcmp(path + 1, hack_options.filename) != 0)) {
 		return -ENOENT;
+	}
 
 	if ((fi->flags & O_ACCMODE) != O_RDONLY)
 		return -EACCES;
@@ -114,6 +124,20 @@ static int hello_read(const char *path, char *buf, size_t size, off_t offset,
 {
 	size_t len;
 	(void) fi;
+
+	if (strcmp(path + 1, hack_options.filename) == 0) {
+		len = strlen(hack_options.contents);
+		if (offset < len) {
+			if (offset + size > len)
+				size = len - offset;
+			memcpy(buf, hack_options.contents + offset, size);
+		}
+		else
+			size = 0;
+
+		return size;
+	}
+
 	if(strcmp(path+1, options.filename) != 0)
 		return -ENOENT;
 
@@ -156,7 +180,10 @@ int main(int argc, char *argv[])
 	   fuse_opt_parse can free the defaults if other
 	   values are specified */
 	options.filename = strdup("hello");
-	options.contents = strdup("Hello World!\nthis is a good day!\n");
+	options.contents = strdup("Hello World!\n");
+
+	hack_options.filename = strdup("hack");
+	hack_options.contents = strdup("this is a good day!\n");
 
 	/* Parse options */
 	if (fuse_opt_parse(&args, &options, option_spec, NULL) == -1)
