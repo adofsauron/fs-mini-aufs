@@ -1,0 +1,18 @@
+[Unit]
+Description=fastdir service
+After=network-online.target
+
+[Service]
+Type=forking
+PIDFile=/opt/fastcfs/fdir/serverd.pid
+ExecStart=/usr/bin/fdir_serverd /etc/fastcfs/fdir/server.conf start
+ExecStop=/usr/bin/fdir_serverd /etc/fastcfs/fdir/server.conf stop
+
+# No artificial start/stop timeout
+TimeoutSec=0
+
+# Disable OOM kill by Linux kernel
+OOMScoreAdjust=-1000
+
+[Install]
+WantedBy=multi-user.target
