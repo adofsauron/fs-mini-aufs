@@ -6,6 +6,14 @@ RD /s /q fastcfs
 RD /s /q fastdir
 RD /s /q faststore
 
+
+git rm -rf libfastcommon
+git rm -rf libserverframe
+git rm -rf libdiskallocator
+git rm -rf fastcfs
+git rm -rf fastdir
+git rm -rf faststore
+
 git config --global core.autocrlf false
 
 git clone https://gitee.com/fastdfs100/libfastcommon.git

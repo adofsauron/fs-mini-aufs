@@ -1,3 +1,0 @@
-version=3
-opts="mode=git" https://github.com/happyfish100/faststore.git \
-   refs/tags/v([\d\.]+) debian uupdate
