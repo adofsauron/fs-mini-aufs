@@ -1,7 +1,7 @@
 #!/bin/bash
 
-dos2unix *.sh
-chmod +x *.sh
+dos2unix *
+chmod +x *
 
 dos2unix build-aux/*
 chmod +x build-aux/*
