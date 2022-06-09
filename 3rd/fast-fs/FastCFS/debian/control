@@ -1,0 +1,120 @@
+Source: fastcfs
+Section: admin
+Priority: optional
+Maintainer: YuQing <384681@qq.com>
+Build-Depends: debhelper (>=11~),
+               fastdir-dev (>= 3.2.0) <pkg.fastcfs.core>,
+               faststore-dev (>= 3.2.0) <pkg.fastcfs.core>,
+               libfuse3-dev (>= 3.10.1) <pkg.fastcfs.core>,
+               libfastcommon-dev (>= 1.0.56) <pkg.auth.client>,
+               libserverframe-dev (>= 1.1.13) <pkg.auth.client>
+Standards-Version: 4.1.4
+Homepage: http://github.com/happyfish100/FastCFS/
+
+
+Package: fastcfs
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: fastcfs-fused (= ${binary:Version}),
+         fastcfs-utils (= ${binary:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: the auth client library and config files of FastCFS.
+ a high performance distributed file system which can be used as the back-end storage of databases and cloud platforms.
+
+
+Package: fastcfs-fused
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: fastcfs-api-libs (= ${binary:Version}),
+         fuse3 (>= 3.10.1),
+         fastcfs-fuse-config (>= ${fastcfs-fuse-config:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: FastCFS fuse
+
+Package: fastcfs-utils
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: libserverframe (>= ${libserverframe:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: FastCFS utils
+
+Package: fastcfs-api-libs
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: fastdir-client (>= ${fastdir-client:Version}),
+         faststore-client (>= ${faststore-client:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: FastCFS api library
+
+Package: fastcfs-api-dev
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: fastcfs-api-libs (= ${binary:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: header files of FastCFS api library
+
+Package: fastcfs-auth-server
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: fastdir-client (>= ${fastdir-client:Version}),
+         fastcfs-auth-config (>= ${fastcfs-auth-config:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: FastCFS auth server
+
+Package: fastcfs-fuse-config
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.fastcfs.core>
+Depends: faststore-config (>= ${faststore-config:Version})
+         ${misc:Depends}, ${shlibs:Depends}
+Description: FastCFS fuse config files for sample
+
+Package: fastcfs-auth
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.auth.client>
+Depends: libfastcommon (>= ${libfastcommon:Version}),
+         libserverframe (>= ${libserverframe:Version}),
+         fastcfs-auth-server (= ${binary:Version}),
+         fastcfs-auth-client (= ${binary:Version}),
+         fastcfs-auth-config (= ${fastcfs-auth-config:Version}),
+         ${misc:Depends}
+Description: the auth client library and config files of FastCFS.
+ FastCFS is a high performance distributed file system which can be used as the back-end storage of databases and cloud platforms.
+
+
+Package: fastcfs-auth-dev
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.auth.client>
+Depends: fastcfs-auth-client (= ${binary:Version}),
+         ${misc:Depends}
+Description: header files of FastCFS auth client
+ This package provides the header files of libfcfsauthclient
+
+ 
+Package: fastcfs-auth-client
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.auth.client>
+Depends: libfastcommon (>= ${libfastcommon:Version}),
+         libserverframe (>= ${libserverframe:Version}),
+         ${misc:Depends}, ${shlibs:Depends}
+Description: FastCFS auth client
+ FastCFS auth client
+
+Package: fastcfs-auth-config
+Architecture: any
+Multi-Arch: foreign
+Build-Profiles: <pkg.auth.client>
+Depends: libfastcommon (>= ${libfastcommon:Version}),
+         libserverframe (>= ${libserverframe:Version}),
+         ${misc:Depends}
+Description: FastCFS auth config files for sample
+ FastCFS auth config files for sample

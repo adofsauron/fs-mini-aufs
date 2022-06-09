@@ -1,0 +1,25 @@
+#!/usr/bin/make -f
+
+export DESTDIR = $(CURDIR)/debian/tmp
+export CONFDIR=$(DESTDIR)/etc/fastcfs/fstore/
+
+%:
+	dh $@
+
+override_dh_auto_build:
+	./make.sh clean && ./make.sh
+
+override_dh_auto_install:
+	./make.sh install
+	
+	mkdir -p $(CONFDIR)
+	cp conf/*.conf $(CONFDIR)
+	cp systemd/faststore.service debian/faststore-server.faststore.service
+	dh_auto_install
+
+override_dh_installsystemd:
+	dh_installsystemd --package=faststore-server --name=faststore --no-start --no-restart-on-upgrade
+
+.PHONY: override_dh_gencontrol
+override_dh_gencontrol:
+	dh_gencontrol -- -Tdebian/substvars

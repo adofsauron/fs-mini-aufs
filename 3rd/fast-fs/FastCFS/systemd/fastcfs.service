@@ -1,0 +1,18 @@
+[Unit]
+Description=fastcfs service
+After=network-online.target
+
+[Service]
+Type=forking
+PIDFile=/opt/fastcfs/fcfs/fused.pid
+ExecStart=/usr/bin/fcfs_fused /etc/fastcfs/fcfs/fuse.conf start
+ExecStop=/usr/bin/fcfs_fused /etc/fastcfs/fcfs/fuse.conf stop
+
+# start/stop timeout
+TimeoutSec=60
+
+# Disable OOM kill by Linux kernel
+OOMScoreAdjust=-1000
+
+[Install]
+WantedBy=multi-user.target

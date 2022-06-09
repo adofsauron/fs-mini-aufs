@@ -1,0 +1,62 @@
+# Makefile.in
+src/api/Makefile
+src/api/tests/Makefile
+src/preload/Makefile
+src/fuse/Makefile
+src/tools/Makefile
+src/auth/server/Makefile
+src/auth/client/Makefile
+src/auth/client/tools/Makefile
+
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dSYM
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.out
+src/api/tests/test_file_op
+src/api/tests/test_file_copy
+src/api/tests/test_papi_copy
+src/api/tests/test_read_ahead
+src/fuse/fcfs_fused
+src/tools/fcfs_active_test
+src/auth/server/fcfs_authd
+src/auth/client/tools/fcfs_user
+src/auth/client/tools/fcfs_pool
+src/auth/client/tools/fauth_list_servers
+src/auth/client/tools/fauth_cluster_stat
+
+# other
+logs
+data
+*.pid
+*.swp
+*.swo
+
+# Build tmp path after execute fastcfs.sh
+build
+
+.DS_Store
+.fcfs
+.idea

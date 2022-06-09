@@ -1,0 +1,42 @@
+#!/usr/bin/make -f
+
+export DESTDIR = $(CURDIR)/debian/tmp
+export FUSE_CONFDIR=$(DESTDIR)/etc/fastcfs/fcfs/
+export AUTH_CONFDIR=$(DESTDIR)/etc/fastcfs/auth/
+
+%:
+	dh $@
+
+override_dh_auto_build:
+ifneq ($(filter pkg.fastcfs.core,$(DEB_BUILD_PROFILES)),)
+	./make.sh --exclude=auth_client clean && ./make.sh --exclude=auth_client
+endif
+ifneq ($(filter pkg.auth.client,$(DEB_BUILD_PROFILES)),)
+	./make.sh --module=auth_client clean && ./make.sh --module=auth_client
+endif
+	
+
+override_dh_auto_install:
+ifneq ($(filter pkg.fastcfs.core,$(DEB_BUILD_PROFILES)),)
+	./make.sh --exclude=auth_client install
+	mkdir -p $(FUSE_CONFDIR)
+	cp conf/*.conf $(FUSE_CONFDIR)
+	cp systemd/fastcfs.service debian/fastcfs-fused.fastcfs.service
+	cp systemd/fastauth.service debian/fastcfs-auth-server.fastauth.service
+endif
+ifneq ($(filter pkg.auth.client,$(DEB_BUILD_PROFILES)),)
+	./make.sh --module=auth_client install
+	AUTH_CONFDIR=$(DESTDIR)/etc/fastcfs/auth/
+	mkdir -p $(AUTH_CONFDIR)
+	cp src/auth/conf/*.conf $(AUTH_CONFDIR)
+	cp -R src/auth/conf/keys $(AUTH_CONFDIR)
+endif
+	dh_auto_install
+
+override_dh_installsystemd:
+	dh_installsystemd --package=fastcfs-fused --name=fastcfs --no-start --no-restart-on-upgrade
+	dh_installsystemd --package=fastcfs-auth-server --name=fastauth --no-start --no-restart-on-upgrade
+
+.PHONY: override_dh_gencontrol
+override_dh_gencontrol:
+	dh_gencontrol -- -Tdebian/substvars

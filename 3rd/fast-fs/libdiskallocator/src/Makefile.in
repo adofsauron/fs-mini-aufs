@@ -1,0 +1,76 @@
+.SUFFIXES: .c .lo
+
+COMPILE = $(CC) $(CFLAGS) -fPIC
+INC_PATH = -Iinclude -I/usr/local/include
+LIB_PATH = $(LIBS) -lfastcommon -lserverframe
+TARGET_LIB = $(TARGET_PREFIX)/$(LIB_VERSION)
+
+TOP_HEADERS = global.h storage_allocator.h storage_config.h storage_types.h \
+              store_path_index.h
+
+BINLOG_COMMON_HEADER = binlog/common/binlog_types.h binlog/common/binlog_fd_cache.h \
+                       binlog/common/write_fd_cache.h binlog/common/binlog_reader.h \
+                       binlog/common/binlog_writer.h
+
+BINLOG_TRUNK_HEADER = binlog/trunk/trunk_binlog.h binlog/trunk/trunk_space_log.h \
+                      binlog/trunk/trunk_index.h binlog/trunk/space_log_reader.h
+
+DIO_HEADER = dio/read_buffer_pool.h dio/trunk_fd_cache.h \
+             dio/trunk_read_thread.h dio/trunk_write_thread.h
+
+TRUNK_HEADER = trunk/trunk_allocator.h trunk/trunk_freelist.h \
+               trunk/trunk_id_info.h trunk/trunk_hashtable.h  \
+               trunk/trunk_maker.h trunk/trunk_prealloc.h trunk/trunk_reclaim.h
+
+TOP_OBJS = global.lo storage_allocator.lo storage_config.lo store_path_index.lo
+
+BINLOG_OBJS = binlog/common/binlog_fd_cache.lo binlog/common/write_fd_cache.lo \
+              binlog/common/binlog_reader.lo binlog/common/binlog_writer.lo \
+              binlog/trunk/trunk_binlog.lo binlog/trunk/trunk_space_log.lo  \
+              binlog/trunk/trunk_index.lo binlog/trunk/space_log_reader.lo
+
+DIO_OBJS =  dio/trunk_write_thread.lo dio/trunk_read_thread.lo \
+            dio/trunk_fd_cache.lo dio/read_buffer_pool.lo
+
+TRUNK_OBJS = trunk/trunk_allocator.lo trunk/trunk_id_info.lo  \
+             trunk/trunk_hashtable.lo trunk/trunk_freelist.lo \
+             trunk/trunk_prealloc.lo  trunk/trunk_maker.lo    \
+             trunk/trunk_reclaim.lo
+
+SHARED_OBJS = $(BINLOG_OBJS) $(DIO_OBJS) $(TRUNK_OBJS) $(TOP_OBJS)
+
+ALL_OBJS = $(SHARED_OBJS)
+ALL_LIBS = libdiskallocator.so
+
+all: $(ALL_LIBS)
+
+libdiskallocator.so: $(SHARED_OBJS)
+
+	cc -shared -o $@ $^ $(LIB_PATH)
+
+.lo:
+	$(COMPILE) -o $@ $<  $(SHARED_OBJS) $(LIB_PATH) $(INC_PATH)
+.c:
+	$(COMPILE) -o $@ $<  $(ALL_OBJS) $(LIB_PATH) $(INC_PATH)
+.c.lo:
+	$(COMPILE) -c -o $@ $<  $(INC_PATH)
+install:
+	mkdir -p $(TARGET_LIB)
+	mkdir -p $(TARGET_PREFIX)/lib
+	mkdir -p $(TARGET_PREFIX)/include/diskallocator/binlog/common
+	mkdir -p $(TARGET_PREFIX)/include/diskallocator/binlog/trunk
+	mkdir -p $(TARGET_PREFIX)/include/diskallocator/trunk
+	mkdir -p $(TARGET_PREFIX)/include/diskallocator/dio
+
+	install -m 755 $(ALL_LIBS) $(TARGET_LIB)
+	cp -f $(TOP_HEADERS) $(TARGET_PREFIX)/include/diskallocator/
+	cp -f $(BINLOG_COMMON_HEADER) $(TARGET_PREFIX)/include/diskallocator/binlog/common/
+	cp -f $(BINLOG_TRUNK_HEADER) $(TARGET_PREFIX)/include/diskallocator/binlog/trunk/
+	cp -f $(TRUNK_HEADER) $(TARGET_PREFIX)/include/diskallocator/trunk/
+	cp -f $(DIO_HEADER) $(TARGET_PREFIX)/include/diskallocator/dio/
+
+	@BUILDROOT=$$(echo "$(TARGET_PREFIX)" | grep BUILDROOT); \
+	if [ -z "$$BUILDROOT" ] && [ ! -e $(TARGET_PREFIX)/lib/libdiskallocator.so ]; then ln -s $(TARGET_LIB)/libdiskallocator.so $(TARGET_PREFIX)/lib/libdiskallocator.so; fi
+clean:
+	rm -f $(ALL_OBJS) $(ALL_LIBS)
+
