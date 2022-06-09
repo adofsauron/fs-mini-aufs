@@ -202,7 +202,7 @@ parse_fstore_servers() {
       echo "  server_ids = [1, 3]"
       echo "  # Or server_ids = 1"
       echo "  [server-1]"
-      echo "  host = 10.0.1.11"
+      echo "  host = 192.168.58.128"
       exit 1
     fi
   done
@@ -230,7 +230,7 @@ parse_fdir_servers() {
   else
     echo "ERROR: Parse fdir server hosts failed, $conf_file must conform to format below:"
     echo "  [server-1]"
-    echo "  host = 10.0.1.11"
+    echo "  host = 192.168.58.128"
     echo "  ..."
     exit 1
   fi
@@ -258,7 +258,7 @@ parse_fauth_servers() {
   else
     echo "ERROR: Parse fauth server hosts failed, $conf_file must conform to format below:"
     echo "  [server-1]"
-    echo "  host = 10.0.1.11"
+    echo "  host = 192.168.58.128"
     echo "  ..."
     exit 1
   fi
