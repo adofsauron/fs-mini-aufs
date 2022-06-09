@@ -2,8 +2,8 @@
 RD /s /q libfastcommon
 RD /s /q libserverframe
 RD /s /q libdiskallocator
-RD /s /q FastCFS
-RD /s /q fastDIR
+RD /s /q fastcfs
+RD /s /q fastdir
 RD /s /q faststore
 
 git config --global core.autocrlf false
@@ -30,12 +30,13 @@ cd ..
 
 cd libdiskallocator
 RD /s /q .git
+cd ..
 
-cd FastCFS
+cd fastcfs
 RD /s /q .git
 cd ..
 
-cd fastDIR
+cd fastdir
 RD /s /q .git
 cd ..
 
