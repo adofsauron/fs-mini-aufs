@@ -87,16 +87,16 @@ print_detail_usage() {
   echo "  $shell_name erase"
   echo "          Erase all FastCFS softwares on all nodes."
   echo ""
-  echo "  $shell_name config fdir 172.16.168.128"
-  echo "          Copy fdir config file to host 172.16.168.128."
+  echo "  $shell_name config fdir 192.168.58.128"
+  echo "          Copy fdir config file to host 192.168.58.128."
   echo ""
   echo "  $shell_name start fdir"
   echo "          Start all fdir servers."
   echo ""
-  echo "  $shell_name start fdir 172.16.168.128"
-  echo "          Start fdir server on host 172.16.168.128."
+  echo "  $shell_name start fdir 192.168.58.128"
+  echo "          Start fdir server on host 192.168.58.128."
   echo ""
-  echo "  $shell_name tail fdir 172.16.168.128 -n 100"
+  echo "  $shell_name tail fdir 192.168.58.128 -n 100"
   echo "          Display the last 100 lines of fdir server log."
   echo ""
   echo "  $shell_name status"
@@ -419,10 +419,10 @@ list_servers_in_config() {
 }
 
 # Load cluster groups from cluster config files.
-#   fdir_group=(172.16.168.128)
+#   fdir_group=(192.168.58.128)
 #   fstore_group_count=1
-#   fstore_group_1=(172.16.168.128)
-#   fauth_group=(172.16.168.128)
+#   fstore_group_1=(192.168.58.128)
+#   fauth_group=(192.168.58.128)
 load_cluster_groups() {
   if [ $fdir_need_execute -eq 1 ]; then
     # list_servers_in_config fdir_list_servers conf/fdir/cluster.conf
@@ -633,7 +633,7 @@ execute_yum() {
     fi
     # yum install FastCFS-auth-server fastDIR-server faststore-server FastCFS-fused -y
     echo "INFO: yum $yum_command $program_name -y."
-    sudo yum $yum_command $program_name -y
+    sudo yum --allowerasing $yum_command $program_name -y
     if [ $? -ne 0 ]; then
       echo "ERROR: \"yum $yum_command $program_name -y\" execute failed."
       exit 1
